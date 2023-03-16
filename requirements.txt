@@ -3,5 +3,4 @@ numpy
 pandas
 plotly
 requests
-urllib
 streamlit_card
