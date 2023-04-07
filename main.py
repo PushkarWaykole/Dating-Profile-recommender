@@ -36,7 +36,7 @@ def main():
     vert_space = "<body style='bgcolor: \"pink\";'></body>"
     st.markdown(vert_space, unsafe_allow_html=True)
     # st.sidebar.title("Navigation Bar")
-    menu = ['Home','Recommendations','Exploratory Data Analysis', 'Suggestions & Future Scope']
+    menu = ['Home','Exploratory Data Analysis', 'Suggestions & Future Scope']
     user_menu=st.sidebar.radio('Select an Option', menu)
 
     if(user_menu=='Home'):
@@ -144,65 +144,7 @@ According to us, no insta id should be used because it might reduce the user's t
         st.write("""We can apply multiple policies/algo for scoring and recommendations system and we can randomly use any policy and then record the feedback for it and using reinforcement learning do exploration and exploitation to select best policy""")
     
     
-    else:
-        st.header('Recommendations')
-
-        col1, col2, col3, col4, col5 = st.columns(5)
-        
-        for i in [0, 5]:
-            # col1.subheader("User " + str(i+1))
-            hasClicked = card(
-        title="User " + str(i+1),
-        text="Some description",
-        # image="http://placekitten.com/200/300",
-        url="https://github.com/gamcoh/st-card"
-        )
-            # col1.plotly_chart(px.pie(users, values='_id', names='is_subscribed', color_discrete_sequence=["pink", "purple"][::-1]), use_container_width=True)
-            # col2.subheader("User " + str(i+2))
-            hasClicked = card(title="User " + str(i+2), text="Some description",)
-        
-            # col2.plotly_chart(px.pie(users, values='_id', names='is_subscribed', color_discrete_sequence=["pink", "purple"][::-1]), use_container_width=True)
-            # col3.subheader("User " + str(i+3))
-            hasClicked = card(
-        title="User " + str(i+3),
-        text="Some description",
-        # image="http://placekitten.com/200/300",
-        url="https://github.com/gamcoh/st-card"
-        )
-            # col3.plotly_chart(px.pie(users, values='_id', names='is_subscribed', color_discrete_sequence=["pink", "purple"][::-1]), use_container_width=True)
-            # col4.subheader("User " + str(i+4))
-            hasClicked = card(
-        title="User " + str(i+4),
-        text="Some description",
-        # image="http://placekitten.com/200/300",
-        url="https://github.com/gamcoh/st-card"
-        )
-            # col4.plotly_chart(px.pie(users, values='_id', names='is_subscribed', color_discrete_sequence=["pink", "purple"][::-1]), use_container_width=True)
-            # col5.subheader("User " + str(i+5))
-            hasClicked = card(
-        title="User " + str(i+5),
-        text="Some description",
-        # image="http://placekitten.com/200/300",
-        url="https://github.com/gamcoh/st-card"
-        )
-            # col5.plotly_chart(px.pie(users, values='_id', names='is_subscribed', color_discrete_sequence=["pink", "purple"][::-1]), use_container_width=True)
-        # years,country=helper.country_year_list(users)
-        
-        # selected_year=st.sidebar.selectbox("Select Year",years)
-        # selected_country=st.sidebar.selectbox("Select Country",country)
-        # medal_tally=helper.fetch_medal_tally(users,selected_year,selected_country)
-        # if selected_year == 'Overall' and selected_country == 'Overall':
-        #     st.title("Overall Tally")
-        # if selected_year != 'Overall' and selected_country == 'Overall':
-        #     st.title("Medal Tally in " + str(selected_year) + " Olympics")
-        # if selected_year == 'Overall' and selected_country != 'Overall':
-        #     st.title(selected_country + " overall performance")
-        # if selected_year != 'Overall' and selected_country != 'Overall':
-        #     st.title(selected_country + " performance in " + str(selected_year) + " Olympics")
-        # if medal_tally.empty:
-        #     st.title("No data Available")
-        # else:
-        #     st.table(medal_tally)
+    
 
 
 if __name__ == "__main__":
