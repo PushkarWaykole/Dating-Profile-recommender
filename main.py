@@ -45,9 +45,8 @@ def main():
         with col1:
             st.header("FIND YOUR PERFECT MATCH!")
             st.markdown('Provide the follwing data')
-            data = st.text_area("Data (json):", height=240)
-            st.write("Example of the json object ")
-            st.write('{"_id":499,"bio":"Explore after chit-chat","college":"JNU","country":"IN","createdAt":"2023-02-09T06:44:27.385Z","dob":"2000-02-27","email":"9499000000@get.idyll","face_detection_probabilities":null,"gender":"M","height":5.3,"interests":[""],"is_habit_drink":"S","is_habit_smoke":"S","is_verified":false,"mobile":9499000000,"name":"Aryan ","status":true,"type":"U","updatedAt":"2023-02-09T06:50:46.115Z","verified_at":null,"what_to_find":"C","who_to_date":"F","is_subscribed":false,"clg":"JNU","age":23.0}')
+            data = st.text_area("Data (json):", height=240,value='{"_id":499,"bio":"Explore after chit-chat","college":"JNU","country":"IN","createdAt":"2023-02-09T06:44:27.385Z","dob":"2000-02-27","email":"9499000000@get.idyll","face_detection_probabilities":null,"gender":"M","height":5.3,"interests":[""],"is_habit_drink":"S","is_habit_smoke":"S","is_verified":false,"mobile":9499000000,"name":"Aryan ","status":true,"type":"U","updatedAt":"2023-02-09T06:50:46.115Z","verified_at":null,"what_to_find":"C","who_to_date":"F","is_subscribed":false,"clg":"JNU","age":23.0}')
+           
             if data != "":
                 no_data = False
             
